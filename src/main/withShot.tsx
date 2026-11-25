@@ -95,10 +95,8 @@ export const useScreenShotTest = (
         const currentViewshotRef = viewShotRefs[offset.current + index].current
         if (currentViewshotRef) {
           const res = await htmlToImage.toPng(currentViewshotRef) //currentViewshotRef.capture();
-          console.log('res...', res)
           const data = res.substring(res.indexOf(',') + 1)
-          console.log('data...', data)
-
+          
           // const dataUrl = canvas.toDataURL()
           // const data = await RNFS.readFile(canvas, 'base64');
           // console.log('data...',data)
@@ -266,10 +264,6 @@ export const useScreenShotTest = (
           }}
         >
           {[...componentsCurrentlyRendered].map((comp: any, index: number) => {
-            console.log(
-              'viewShotRefs[offset.current + index]',
-              viewShotRefs[offset.current + index].offsetWidth
-            )
             return (
               <div
                 key={comp.id}

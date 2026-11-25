@@ -128,9 +128,7 @@ export var useScreenShotTest = function (components, screenshotConfig) {
                         case 1:
                             res = _c.sent() //currentViewshotRef.capture();
                             ;
-                            console.log('res...', res);
                             data = res.substring(res.indexOf(',') + 1);
-                            console.log('data...', data);
                             // const dataUrl = canvas.toDataURL()
                             // const data = await RNFS.readFile(canvas, 'base64');
                             // console.log('data...',data)
@@ -233,7 +231,6 @@ export var useScreenShotTest = function (components, screenshotConfig) {
                             borderColor: 'gray',
                             borderRadius: 4
                         } }, { children: __spreadArray([], __read(componentsCurrentlyRendered), false).map(function (comp, index) {
-                            console.log('viewShotRefs[offset.current + index]', viewShotRefs[offset.current + index].offsetWidth);
                             return (_jsx("div", __assign({ ref: viewShotRefs[offset.current + index], style: { width: 'max-content' } }, { children: comp.component() }), comp.id));
                         }) }))] })), _jsx("div", __assign({ onClick: function () { return captureView(viewShotRefs, componentsCurrentlyRendered); }, style: {
                     borderRadius: 4,

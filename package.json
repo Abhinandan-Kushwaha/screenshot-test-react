@@ -1,6 +1,6 @@
 {
   "name": "screenshot-test-react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/main/index.js",
   "files": [
     "dist"
@@ -16,25 +16,26 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "screenshot-test-server": "0.0.7"
+    "screenshot-test-server": "0.0.10"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^8.0.0",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.13",
     "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.119",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "html-to-image": "^1.11.11",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "@types/node": "^20.19.43",
+    "@types/react": "^19.3.2",
+    "@types/react-dom": "^19.3.0",
+    "html-to-image": "^1.11.13",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^6.2.3"
   },
   "peerDependencies": {
-    "html-to-image": "^1.11.11"
+    "html-to-image": "^1.11.13"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 export declare const defaultConfig: {
     path: string;
     localhostUrl: string;
@@ -29,4 +29,4 @@ export interface Components {
     backgroundColor?: string;
     quality?: number;
 }
-export declare const useScreenShotTest: (components: Components[], screenshotConfig?: ScreenshotConfig) => import("react/jsx-runtime").JSX.Element;
+export declare const useScreenShotTest: (components: Components[], screenshotConfig?: ScreenshotConfig) => React.JSX.Element;
